@@ -1,0 +1,21 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path sass sass/main.sass   css/main.css --output-style compressed",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\"",
+    "start": "npm run watch-css"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Michal Jasinski",
+    "url": "http://micky.click"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

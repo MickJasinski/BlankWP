@@ -1,0 +1,39 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700')
+
+// Variables
+    // colors
+$link: orange
+$text: #333
+
+// General
+body
+    font-family: 'Lato', sans-serif
+    color: $text
+
+a:link, a:visited
+    color: $link
+
+.container
+    max-width: 1200px  
+    padding: 0 20px
+    margin: 0 auto
+
+// Navigation
+.dt-nav
+    display: block
+    ul
+        margin: 0
+        padding: 0
+        li 
+            list-style: none
+            float: left
+    ul:before, ul:after
+        content: ""
+        display: table
+    ul:after
+        clear: both
+    ul
+        *zoom: 1
+
+     
